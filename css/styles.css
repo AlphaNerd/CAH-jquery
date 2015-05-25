@@ -1,0 +1,149 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+#status-message {
+  position: absolute;
+  top: 25%;
+  left: 0px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 0;
+  text-align: center;
+}
+.container {
+  width: 305px;
+  margin: 0 auto;
+}
+.button{
+    padding:5px 20px;
+    background:#333;
+    color:#fff;
+    margin:5px;
+    width:100px;
+    display:inline-block;
+    text-align: center;
+    text-shadow: none;
+}
+
+#player {
+  width: 300px;
+  margin: auto !important;
+  display: block;
+  height: 500px;
+  position: relative;
+  list-style-type: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.card {
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  width: 85%;
+  height: 360px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  cursor: hand;
+}
+.card .value{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    width:100%;
+    text-align: center;
+    position: relative;
+    top:25%;
+    text-shadow: none;
+}
+.card .cardNum {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 10px;
+}
+.white{
+    background: #fff;
+    color:#333;
+    box-shadow: inset 0px 0px 100px rgba(0,0,0,0.10);
+    border:1px solid #e1e1e1;
+}
+.black{
+    background:#222;
+    color:#fff;
+    box-shadow: inset 0px 0px 100px rgba(0,0,0,0.30);
+    border:1px solid #e1e1e1;
+}
+.selected{
+    content:url("http://d1ylr6sba64qi3.cloudfront.net/cyri/assets/images/green_checkmark_small.gif");
+    position: absolute;
+    right:20px;
+    top:20px;
+}
+.rotate-left {
+  transform: rotate(30deg) scale(0.8);
+  transition: 1s;
+  margin-left: 400px;
+  cursor: e-resize;
+  opacity: 0;
+}
+.rotate-right {
+  transform: rotate(-30deg) scale(0.8);
+  transition: 1s;
+  opacity: 0;
+  margin-left: -400px;
+  cursor: w-resize;
+}
+.flick-submit{
+  transform: rotate(-30deg) scale(0.8);
+  transition: 1s;
+  opacity: 0;
+  margin-top: -800px;
+  cursor: w-resize;
+}
+.avatar {
+  width: 240px;
+  height: 340px;
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-size: 100% auto !important;
+  background-position: center;
+ background-repeat: no-repeat;
+}
+.confirm {
+  border: 2px solid green;
+  border-radius: 10px;
+}
+.box{
+  width:200px;
+  margin:0 auto;
+}
+.like {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid green;
+  color: green;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  text-shadow: none;
+}
+.dislike {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid red;
+  color: red;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  text-shadow: none;
+}
